@@ -1,11 +1,9 @@
-import { useEffect, useState } from 'react'
-import Header from './components/Header'
-import Produtos from './containers/Produtos'
-
+import { Provider } from 'react-redux'
 import { GlobalStyle } from './styles'
 
 import { store } from './store'
-import { Provider } from 'react-redux'
+import Header from './components/Header'
+import Produtos from './containers/Produto'
 
 export type Produto = {
   id: number
@@ -20,7 +18,7 @@ function App() {
       <GlobalStyle />
       <div className="container">
         <Header />
-        <Produtos />
+        <Produtos favoritos={[]} />
       </div>
     </Provider>
   )

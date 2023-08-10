@@ -11,7 +11,7 @@ const initialState: FavoritoState = {
 }
 
 const favoritoSlice = createSlice({
-  name: 'favoritos',
+  name: 'favorito',
   initialState,
   reducers: {
     favoritar: (state, action: PayloadAction<Produto>) => {
